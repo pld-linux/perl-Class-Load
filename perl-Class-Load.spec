@@ -8,19 +8,26 @@
 Summary:	Class::Load - a working (require "Class::Name") and more
 Summary(pl.UTF-8):	Class::Load - działające (require "Klasa::Nazwa") i inne
 Name:		perl-Class-Load
-Version:	0.13
+Version:	0.19
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d26a8c6da4e12d72d9f06a47c89c6a73
+# Source0-md5:	1a81421fda749d36952e7ada7876bcc7
 URL:		http://search.cpan.org/dist/Class-Load/
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Module-Runtime
+BuildRequires:	perl-Module-Implementation >= 0.04
+BuildRequires:	perl-Module-Runtime >= 0.012
+BuildRequires:	perl-Package-Stash >= 0.14
+BuildRequires:	perl-Scalar-List-Utils
 BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Requires
+BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Try-Tiny
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
