@@ -27,6 +27,7 @@ BuildRequires:	perl-Test-Fatal
 BuildRequires:	perl-Test-Requires
 BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny
+BuildRequires:	perl-version
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
