@@ -4,7 +4,6 @@
 #
 %define		pdir	Class
 %define		pnam	Load
-%include	/usr/lib/rpm/macros.perl
 Summary:	Class::Load - a working (require "Class::Name") and more
 Summary(pl.UTF-8):	Class::Load - działające (require "Klasa::Nazwa") i inne
 Name:		perl-Class-Load
