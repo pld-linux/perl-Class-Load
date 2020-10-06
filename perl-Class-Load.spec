@@ -18,13 +18,15 @@ URL:		http://search.cpan.org/dist/Class-Load/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
-BuildRequires:	perl-Data-OptList
+BuildRequires:	perl-Data-OptList >= 0.110
 BuildRequires:	perl-Module-Implementation >= 0.04
 BuildRequires:	perl-Module-Runtime >= 0.012
 BuildRequires:	perl-Package-Stash >= 0.14
 BuildRequires:	perl-Scalar-List-Utils
 BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Needs
 BuildRequires:	perl-Test-Requires
 BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny
