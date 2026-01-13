@@ -8,7 +8,7 @@ Summary:	Class::Load - a working (require "Class::Name") and more
 Summary(pl.UTF-8):	Class::Load - działające (require "Klasa::Nazwa") i inne
 Name:		perl-Class-Load
 Version:	0.25
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
